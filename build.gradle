@@ -1,0 +1,24 @@
+version '1.0-SNAPSHOT'
+group 'org.simonscode'
+
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+}
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.telegram', name: 'telegrambots', version: '3.5'
+}
+
+jar {
+    baseName = project.name
+}
