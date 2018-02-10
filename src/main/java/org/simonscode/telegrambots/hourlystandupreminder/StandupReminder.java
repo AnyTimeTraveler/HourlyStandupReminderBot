@@ -48,7 +48,7 @@ public class StandupReminder extends TelegramLongPollingBot {
                             e.printStackTrace();
                         }
                     }
-                }, c.getTime(), 3600);
+                }, c.getTime(), 3_600_000);
                 System.out.println("Created!");
             } else if (update.getMessage().getText().equals("/stop")) {
                 timer.cancel();
