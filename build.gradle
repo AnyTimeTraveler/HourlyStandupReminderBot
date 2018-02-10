@@ -19,6 +19,8 @@ dependencies {
     compile group: 'org.telegram', name: 'telegrambots', version: '3.5'
 }
 
+mainClassName = 'org.simonscode.telegrambots.hourlystandupreminder.StandupReminder'
+
 jar {
     baseName = project.name
 }
